@@ -25,7 +25,7 @@ elseif(NOT SHARED_LIBRARY)
 endif()
 
 # C++ compiler flags
-add_definitions("${SDK_CPP_DEFINES}" "-DBOOST_ALL_NO_LIB")
+add_definitions("${SDK_CPP_DEFINES}" "-DBOOST_ALL_NO_LIB" "-DBOOST_NO_CXX98_FUNCTION_BASE")
 
 if(CMAKE_BUILD_TYPE MATCHES "Release|RELEASE")
   add_definitions("-DNDEBUG")
@@ -53,8 +53,9 @@ if(APPLE AND (NOT IOS))
 endif()
 
 if(APPLE)
-  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fobjc-arc -fmodules -fvisibility=hidden")
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fobjc-arc -fmodules -stdlib=libc++ -std=c++17 -ftemplate-depth=1024 -fexceptions -frtti -fvisibility=hidden -fvisibility-inlines-hidden -fno-aligned-allocation")
+  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fobjc-arc -fmodules -fvisibility=hidden -Wno-error")
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fobjc-arc -fmodules -stdlib=libc++ -std=c++17 -ftemplate-depth=1024 -fexceptions -frtti -fvisibility=hidden -fvisibility-inlines-hidden -fno-aligned-allocation -Wno-enum-constexpr-conversion -Wno-cast-function-type-strict -Wno-error")
+  set(CMAKE_XCODE_ATTRIBUTE_GCC_TREAT_WARNINGS_AS_ERRORS NO)
   set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -Os")
   set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -Os")
   set(CMAKE_LINKER_FLAGS "${CMAKE_LINKER_FLAGS} -ObjC")

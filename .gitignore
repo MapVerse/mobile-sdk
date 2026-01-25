@@ -1,7 +1,64 @@
+# Build outputs
 /build
 /dist
 /extensions
 /generated
 /prebuilt
+
+# Python
 *.pyc
+__pycache__/
+
+# macOS
+.DS_Store
 *DS_Store
+
+# Boost
+boost_*/
+boost_*.zip
+boost_*.tar.gz
+
+# CocoaPods
+Pods/
+Podfile.lock
+*.xcworkspace/
+
+# Xcode
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+DerivedData/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Android/Gradle
+.gradle/
+local.properties
+*.apk
+*.ap_
+*.aab
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# IntelliJ/Android Studio
+.idea/
+*.iml
+
+# Visual Studio
+*.suo
+*.user
+*.sln.docstates
+
+# Temporary files
+*.swp
+*.swo
+*~
+*.tmp
+*.temp

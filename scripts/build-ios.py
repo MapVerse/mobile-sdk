@@ -130,16 +130,17 @@ def buildIOSLib(args, baseArch, outputDir=None):
     "-DSDK_PLATFORM='iOS'",
     "-DSDK_IOS_ARCH='%s'" % arch,
     "-DSDK_IOS_BASEARCH='%s'" % baseArch,
+    "-DCMAKE_CXX_FLAGS=-Wno-enum-constexpr-conversion -Wno-cast-function-type-strict -Wno-error",
     '%s/scripts/build' % baseDir
   ]):
     return False
 
-  bitcodeOptions = ['ENABLE_BITCODE=NO']
+  bitcodeOptions = ['ENABLE_BITCODE=NO', 'GCC_TREAT_WARNINGS_AS_ERRORS=NO', 'CLANG_WARNINGS_AS_ERRORS=NO']
   if not args.stripbitcode and baseArch in ('armv7', 'arm64'):
-    bitcodeOptions = ['ENABLE_BITCODE=YES', 'BITCODE_GENERATION_MODE=bitcode']
+    bitcodeOptions = ['ENABLE_BITCODE=YES', 'BITCODE_GENERATION_MODE=bitcode', 'GCC_TREAT_WARNINGS_AS_ERRORS=NO', 'CLANG_WARNINGS_AS_ERRORS=NO']
   buildMode = ('archive' if args.configuration == 'Release' else 'build')
   return execute('xcodebuild', buildDir,
-    '-project', 'carto_mobile_sdk.xcodeproj', '-arch', arch, '-configuration', args.configuration, buildMode,
+    '-project', 'carto_mobile_sdk.xcodeproj', '-arch', arch, '-configuration', args.configuration, buildMode, 'CMAKE_XCODE_ATTRIBUTE_GCC_TREAT_WARNINGS_AS_ERRORS=NO', 'CMAKE_XCODE_ATTRIBUTE_CLANG_WARNINGS_AS_ERRORS=NO',
     *list(bitcodeOptions)
   )
 
@@ -296,6 +297,7 @@ if 'all' in args.iosarch or args.iosarch == []:
   if not args.metalangle:
     args.iosarch = list(filter(lambda arch: not arch.endswith('-maccatalyst'), args.iosarch))
 args.defines += ';' + getProfile(args.profile).get('defines', '')
+args.defines += ';BOOST_NO_CXX98_FUNCTION_BASE'
 if args.metalangle:
   args.defines += ';' + '_CARTO_USE_METALANGLE'
 else:

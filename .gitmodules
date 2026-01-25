@@ -6,3 +6,9 @@
 	path = libs-external
 	url = https://github.com/cartodb/mobile-external-libs
 	branch = master
+[submodule "samples/ios"]
+	path = samples/ios
+	url = https://github.com/CartoDB/mobile-ios-samples.git
+[submodule "samples/android"]
+	path = samples/android
+	url = https://github.com/CartoDB/mobile-android-samples.git

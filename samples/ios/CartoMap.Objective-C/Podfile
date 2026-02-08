@@ -1,0 +1,7 @@
+platform :ios, '12.0'
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'CartoMap.Objective-C' do
+  # CartoMobileSDK is linked manually from local build
+  pod 'Toast', '~> 3.0'
+end

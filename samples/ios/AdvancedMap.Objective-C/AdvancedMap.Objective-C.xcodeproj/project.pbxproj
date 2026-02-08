@@ -1,0 +1,1445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CARTO00021D786E95003DCBC9 /* CartoMobileSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CARTO00001D786E94003DCBC9 /* CartoMobileSDK.framework */; };
+		2A319B43187C4F8F0004A3CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A319B42187C4F8F0004A3CB /* Foundation.framework */; };
+		2A319B45187C4F8F0004A3CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A319B44187C4F8F0004A3CB /* CoreGraphics.framework */; };
+		2A319B47187C4F8F0004A3CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A319B46187C4F8F0004A3CB /* UIKit.framework */; };
+		2AD24F7518FEDAA6000969F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD24F6A18FEDAA6000969F4 /* AppDelegate.m */; };
+		2AD24F7918FEDAA6000969F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD24F6E18FEDAA6000969F4 /* main.m */; };
+		2AD24F8518FEDB89000969F4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD24F8418FEDB89000969F4 /* Images.xcassets */; };
+		2F466D08228AB813006D27EC /* icon_switches.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F466D07228AB813006D27EC /* icon_switches.png */; };
+		2F466D0B228ABE2F006D27EC /* MapOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F466D09228ABE2F006D27EC /* MapOptions.m */; };
+		2F466D0F228ACAB9006D27EC /* MapOptionsPopupContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F466D0E228ACAB9006D27EC /* MapOptionsPopupContent.swift */; };
+		2F66E35D2295667700C3FAAA /* floor1.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 2F66E35B2295667700C3FAAA /* floor1.geojson */; };
+		2F66E35E2295667700C3FAAA /* floor0.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 2F66E35C2295667700C3FAAA /* floor0.geojson */; };
+		2F66E3602295668100C3FAAA /* sgreconfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F66E35F2295668100C3FAAA /* sgreconfig.json */; };
+		2F66E364229566BC00C3FAAA /* IndoorRoutingController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2F66E362229566BC00C3FAAA /* IndoorRoutingController.mm */; };
+		2F66E3662295696A00C3FAAA /* background_routing_indoor.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F66E3652295696A00C3FAAA /* background_routing_indoor.png */; };
+		2F66E36922956FE600C3FAAA /* icon_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F66E36722956FE500C3FAAA /* icon_2.png */; };
+		2F66E36A22956FE600C3FAAA /* icon_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F66E36822956FE500C3FAAA /* icon_1.png */; };
+		2F66E36C2295797E00C3FAAA /* floors_routing.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 2F66E36B2295797D00C3FAAA /* floors_routing.geojson */; };
+		34B4A0362985542DCAC73775 /* libPods-AdvancedMap.Objective-C.UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E918DC6CE207EA525F4C3D2C /* libPods-AdvancedMap.Objective-C.UITests.a */; };
+		4D13E2801A6EB72600FA74DC /* CustomPopupController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D13E27F1A6EB72600FA74DC /* CustomPopupController.mm */; };
+		4D13E2831A6EB80200FA74DC /* MyCustomPopupHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D13E2821A6EB80200FA74DC /* MyCustomPopupHandler.mm */; };
+		4D2BE7091A52F86F0013ABB3 /* MapBaseController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D2BE7081A52F86F0013ABB3 /* MapBaseController.mm */; };
+		4D4B1F601D018C2A001C2F30 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4B1F5F1D018C2A001C2F30 /* libz.tbd */; };
+		4DAF41AF1AD3C307004E7092 /* GroundOverlayController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4DAF41AE1AD3C307004E7092 /* GroundOverlayController.mm */; };
+		4DC850081A0E718100C5124F /* LauncherListController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4DC850071A0E718100C5124F /* LauncherListController.mm */; };
+		4DC850121A0E7DC500C5124F /* CustomRasterDataSourceController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4DC850111A0E7DC500C5124F /* CustomRasterDataSourceController.mm */; };
+		4DEB06D01A10BDB7003D111C /* OverlaysController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4DEB06CF1A10BDB7003D111C /* OverlaysController.mm */; };
+		4DEB06D81A10CDC0003D111C /* BundledMapController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4DEB06D71A10CDC0003D111C /* BundledMapController.mm */; };
+		4DFC6C6D1B6224D300AF8E06 /* ClusteredMarkersController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC6C6C1B6224D300AF8E06 /* ClusteredMarkersController.mm */; };
+		9A2A46DC69277B2945334956 /* libPods-AdvancedMap.Objective-C.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B16806BB0D561BC919810AEC /* libPods-AdvancedMap.Objective-C.a */; };
+		AD2AD56F1F4B023D00F3C479 /* Package.mm in Sources */ = {isa = PBXBuildFile; fileRef = AD2AD56E1F4B023D00F3C479 /* Package.mm */; };
+		AD2AD5781F4B1ACC00F3C479 /* OfflineMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2AD5771F4B1ACC00F3C479 /* OfflineMapController.m */; };
+		AD32AF711F5EF49700ACF8AC /* rome_carto-streets.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = AD32AF701F5EF41400ACF8AC /* rome_carto-streets.mbtiles */; };
+		AD3D62A11DD07F0F00C97356 /* icon_more.png in Resources */ = {isa = PBXBuildFile; fileRef = AD3D629F1DD07F0F00C97356 /* icon_more.png */; };
+		AD3D62A21DD07F0F00C97356 /* icon_more@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD3D62A01DD07F0F00C97356 /* icon_more@3x.png */; };
+		AD3FFFAE1F710FCC005642F9 /* Cities.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3FFFAD1F710FCC005642F9 /* Cities.m */; };
+		AD3FFFB11F71237F005642F9 /* GeocodingView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3FFFB01F71237F005642F9 /* GeocodingView.m */; };
+		AD3FFFB41F712538005642F9 /* GeocodingBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3FFFB31F712538005642F9 /* GeocodingBaseView.m */; };
+		AD3FFFB81F714D89005642F9 /* RouteClickListener.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3FFFB71F714D89005642F9 /* RouteClickListener.m */; };
+		AD3FFFBA1F716384005642F9 /* banner_icon_info.png in Resources */ = {isa = PBXBuildFile; fileRef = AD3FFFB91F716384005642F9 /* banner_icon_info.png */; };
+		AD443BC41DD0877E00EE65A9 /* VectorTileListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = ADC731451DBFA5B000E1CDCA /* VectorTileListener.mm */; };
+		AD46EB051F6FADC0004B662F /* GalleryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD46EB031F6FADC0004B662F /* GalleryRow.swift */; };
+		AD46EB061F6FADC0004B662F /* GalleryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD46EB041F6FADC0004B662F /* GalleryDelegate.swift */; };
+		AD46EB081F6FADC7004B662F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD46EB071F6FADC7004B662F /* MainView.swift */; };
+		AD46EB0A1F6FAFDB004B662F /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD46EB091F6FAFDB004B662F /* Sample.swift */; };
+		AD46EB1F1F6FB317004B662F /* background_basic_package_manager.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46EB0B1F6FB317004B662F /* background_basic_package_manager.png */; };
+		AD46EB201F6FB317004B662F /* background_bundled_map.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46EB0C1F6FB317004B662F /* background_bundled_map.png */; };
+		AD46EB211F6FB317004B662F /* background_offline_geocoding.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46EB0D1F6FB317004B662F /* background_offline_geocoding.png */; };
+		AD46EB221F6FB317004B662F /* background_offline_reverse_geocoding.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46EB0E1F6FB317004B662F /* background_offline_reverse_geocoding.png */; };
+		AD46EB231F6FB317004B662F /* background_online_geocoding.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46EB0F1F6FB317004B662F /* background_online_geocoding.png */; };
+		AD46EB241F6FB317004B662F /* background_online_reverse_geocoding.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46EB101F6FB317004B662F /* background_online_reverse_geocoding.png */; };
+		AD46EB251F6FB317004B662F /* background_object_editing.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46EB111F6FB317004B662F /* background_object_editing.png */; };
+		AD46EB261F6FB317004B662F /* background_overlays.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46EB121F6FB317004B662F /* background_overlays.png */; };
+		AD46EB271F6FB317004B662F /* background_clusters.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46EB131F6FB317004B662F /* background_clusters.png */; };
+		AD46EB291F6FB317004B662F /* background_routing_offline.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46EB151F6FB317004B662F /* background_routing_offline.png */; };
+		AD46EB2A1F6FB317004B662F /* background_routing_online.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46EB161F6FB317004B662F /* background_routing_online.png */; };
+		AD46EB2B1F6FB317004B662F /* background_wms.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46EB171F6FB317004B662F /* background_wms.png */; };
+		AD46EB2C1F6FB317004B662F /* background_ground_overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46EB181F6FB317004B662F /* background_ground_overlay.png */; };
+		AD46EB2D1F6FB317004B662F /* background_custom_raster_source.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46EB191F6FB317004B662F /* background_custom_raster_source.png */; };
+		AD46EB2E1F6FB317004B662F /* background_basemaps.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46EB1A1F6FB317004B662F /* background_basemaps.png */; };
+		AD46EB2F1F6FB317004B662F /* background_custom_popup.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46EB1B1F6FB317004B662F /* background_custom_popup.png */; };
+		AD46EB301F6FB317004B662F /* background_gps_location.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46EB1C1F6FB317004B662F /* background_gps_location.png */; };
+		AD46EB311F6FB317004B662F /* background_screen_capture.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46EB1D1F6FB317004B662F /* background_screen_capture.png */; };
+		AD46EB321F6FB317004B662F /* background_advanced_package_manager.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46EB1E1F6FB317004B662F /* background_advanced_package_manager.png */; };
+		AD46EB351F6FD2A4004B662F /* PackageDownloadBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD46EB341F6FD2A4004B662F /* PackageDownloadBaseView.m */; };
+		AD46EB3D1F6FD63A004B662F /* PackagePopupContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD46EB3B1F6FD63A004B662F /* PackagePopupContent.swift */; };
+		AD46EB3E1F6FD63A004B662F /* PackageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD46EB3C1F6FD63A004B662F /* PackageCell.swift */; };
+		AD46EB411F6FEBB8004B662F /* PackageDownloadBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD46EB401F6FEBB8004B662F /* PackageDownloadBaseController.m */; };
+		AD46EB441F6FF07A004B662F /* PackageDownloadListener.m in Sources */ = {isa = PBXBuildFile; fileRef = AD46EB431F6FF07A004B662F /* PackageDownloadListener.m */; };
+		AD46EB461F700E65004B662F /* icon_close.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46EB451F700E65004B662F /* icon_close.png */; };
+		AD46EB481F701C27004B662F /* icon_forward_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46EB471F701C27004B662F /* icon_forward_blue.png */; };
+		AD46EB4A1F701C99004B662F /* icon_back_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46EB491F701C99004B662F /* icon_back_blue.png */; };
+		AD4F91FB1F6BE9D600139F79 /* ProgressLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F91FA1F6BE9D600139F79 /* ProgressLabel.swift */; };
+		AD4F91FD1F6BEA0400139F79 /* AlertBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F91FC1F6BEA0400139F79 /* AlertBaseView.swift */; };
+		AD4F91FF1F6BEFCE00139F79 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F91FE1F6BEFCE00139F79 /* Colors.swift */; };
+		AD4F92011F6BF3D000139F79 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F92001F6BF3D000139F79 /* Banner.swift */; };
+		AD4F92041F6BF40400139F79 /* PopupButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F92031F6BF40400139F79 /* PopupButton.swift */; };
+		AD4F92061F6BF40D00139F79 /* SlideInPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F92051F6BF40D00139F79 /* SlideInPopup.swift */; };
+		AD4F92081F6BF41200139F79 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F92071F6BF41200139F79 /* PopupView.swift */; };
+		AD4F920A1F6BF41F00139F79 /* SlideInPopupHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F92091F6BF41F00139F79 /* SlideInPopupHeader.swift */; };
+		AD4F920C1F6BF48200139F79 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F920B1F6BF48200139F79 /* Device.swift */; };
+		AD4F92131F6C13CF00139F79 /* MapBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4F92121F6C13CF00139F79 /* MapBaseView.m */; };
+		AD4F92191F6C250400139F79 /* icon_basemap.png in Resources */ = {isa = PBXBuildFile; fileRef = AD4F92151F6C250400139F79 /* icon_basemap.png */; };
+		AD4F921A1F6C250400139F79 /* icon_global.png in Resources */ = {isa = PBXBuildFile; fileRef = AD4F92161F6C250400139F79 /* icon_global.png */; };
+		AD4F921B1F6C250400139F79 /* icon_info.png in Resources */ = {isa = PBXBuildFile; fileRef = AD4F92171F6C250400139F79 /* icon_info.png */; };
+		AD4F921C1F6C250400139F79 /* icon_language.png in Resources */ = {isa = PBXBuildFile; fileRef = AD4F92181F6C250400139F79 /* icon_language.png */; };
+		AD54BF371DCB6C9900B0C190 /* icon_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD54BF361DCB6C9900B0C190 /* icon_more@2x.png */; };
+		AD589CE41DC0BDD3004E68B2 /* CaptureController.mm in Sources */ = {isa = PBXBuildFile; fileRef = AD589CE31DC0BDD3004E68B2 /* CaptureController.mm */; };
+		AD589CE61DC0D1E7004E68B2 /* WMSMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD589CE51DC0D1E7004E68B2 /* WMSMapController.m */; };
+		AD589CE81DC105A1004E68B2 /* GPSLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD589CE71DC105A1004E68B2 /* GPSLocationController.m */; };
+		AD589CEA1DC108E9004E68B2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD589CE91DC108E9004E68B2 /* CoreLocation.framework */; };
+		AD5991481F4B306900CDF426 /* OnlineReverseGeocodingController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5991471F4B306900CDF426 /* OnlineReverseGeocodingController.m */; };
+		AD59914D1F4B3BB200CDF426 /* OfflineReverseGeocodingController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD59914C1F4B3BB200CDF426 /* OfflineReverseGeocodingController.m */; };
+		AD7A5D1F1D9ABE0700F5EE4E /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7A5D1D1D9ABE0700F5EE4E /* GLKit.framework */; };
+		AD90F9471E096C6E00E6EF51 /* BaseRoutingController.mm in Sources */ = {isa = PBXBuildFile; fileRef = AD90F9461E096C6E00E6EF51 /* BaseRoutingController.mm */; };
+		AD90F9491E096C8200E6EF51 /* OnlineRoutingController.mm in Sources */ = {isa = PBXBuildFile; fileRef = AD90F9481E096C8200E6EF51 /* OnlineRoutingController.mm */; };
+		AD9B19B91DC1E5850025B767 /* cities15000.geojson in Resources */ = {isa = PBXBuildFile; fileRef = AD9B19B81DC1E5850025B767 /* cities15000.geojson */; };
+		ADA1141A1DA399FF00481261 /* AdvancedMap_Objective_C_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA114191DA399FF00481261 /* AdvancedMap_Objective_C_UITests.m */; };
+		ADA114231DA3A24E00481261 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4B1F5F1D018C2A001C2F30 /* libz.tbd */; };
+		ADA114241DA3A25500481261 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7A5D1D1D9ABE0700F5EE4E /* GLKit.framework */; };
+		ADA114251DA3A2BD00481261 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A319B42187C4F8F0004A3CB /* Foundation.framework */; };
+		ADA114261DA3A2CE00481261 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A319B44187C4F8F0004A3CB /* CoreGraphics.framework */; };
+		ADA114271DA3A2D200481261 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A319B46187C4F8F0004A3CB /* UIKit.framework */; };
+		ADA114281DA3A37600481261 /* LauncherListController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4DC850071A0E718100C5124F /* LauncherListController.mm */; };
+		ADB1488E1DC09C59009A899B /* BaseMapsController.mm in Sources */ = {isa = PBXBuildFile; fileRef = ADB1488D1DC09C59009A899B /* BaseMapsController.mm */; };
+		ADB148901DC0A5AD009A899B /* VectorObjectEditingController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB1488F1DC0A5AD009A899B /* VectorObjectEditingController.m */; };
+		ADB148941DC0A6ED009A899B /* VectorElementSelectEventListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = ADB148931DC0A6ED009A899B /* VectorElementSelectEventListener.mm */; };
+		ADB148961DC0A6FB009A899B /* VectorElementDeselectEventListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = ADB148951DC0A6FB009A899B /* VectorElementDeselectEventListener.mm */; };
+		ADB148981DC0A708009A899B /* BasicEditEventListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = ADB148971DC0A708009A899B /* BasicEditEventListener.mm */; };
+		ADC02EA91F7525F200849DBD /* LanguagePopupContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC02EA71F7525F200849DBD /* LanguagePopupContent.swift */; };
+		ADC02EAA1F7525F200849DBD /* StylePopupContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC02EA81F7525F200849DBD /* StylePopupContent.swift */; };
+		ADC02EAD1F75263F00849DBD /* Languages.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC02EAC1F75263F00849DBD /* Languages.m */; };
+		ADC02EB01F752BE100849DBD /* BaseMapsView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC02EAF1F752BE100849DBD /* BaseMapsView.m */; };
+		ADC02EBA1F753C1B00849DBD /* style_image_carto_darkmatter.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC02EB11F753C1B00849DBD /* style_image_carto_darkmatter.png */; };
+		ADC02EBB1F753C1B00849DBD /* style_image_carto_positron.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC02EB21F753C1B00849DBD /* style_image_carto_positron.png */; };
+		ADC02EBC1F753C1B00849DBD /* style_image_carto_voyager.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC02EB31F753C1B00849DBD /* style_image_carto_voyager.png */; };
+		ADC02EC01F753C1B00849DBD /* style_image_nutiteq_darkmatter.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC02EB71F753C1B00849DBD /* style_image_nutiteq_darkmatter.png */; };
+		ADC02EC11F753C1B00849DBD /* style_image_nutiteq_positron.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC02EB81F753C1B00849DBD /* style_image_nutiteq_positron.png */; };
+		ADC02EC21F753C1B00849DBD /* style_image_nutiteq_voyager.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC02EB91F753C1B00849DBD /* style_image_nutiteq_voyager.png */; };
+		ADCB208B1F4B2A5C00E6F8E0 /* BaseReverseGeocodingController.mm in Sources */ = {isa = PBXBuildFile; fileRef = ADCB208A1F4B2A5C00E6F8E0 /* BaseReverseGeocodingController.mm */; };
+		ADCF53C11DC1FFC3004AD5C3 /* MyVectorElementEventListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = ADCF53C01DC1FFC3004AD5C3 /* MyVectorElementEventListener.mm */; };
+		ADED5F141D92A31800AB2D13 /* 852-map-toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = ADED5EF51D92A31800AB2D13 /* 852-map-toolbar.png */; };
+		ADED5F151D92A31800AB2D13 /* 852-map-toolbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADED5EF61D92A31800AB2D13 /* 852-map-toolbar@2x.png */; };
+		ADED5F161D92A31800AB2D13 /* 852-map-toolbar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADED5EF71D92A31800AB2D13 /* 852-map-toolbar@3x.png */; };
+		ADED5F171D92A31800AB2D13 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = ADED5EF81D92A31800AB2D13 /* arrow.png */; };
+		ADED5F181D92A31800AB2D13 /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADED5EF91D92A31800AB2D13 /* arrow@2x.png */; };
+		ADED5F191D92A31800AB2D13 /* basic.zip in Resources */ = {isa = PBXBuildFile; fileRef = ADED5EFA1D92A31800AB2D13 /* basic.zip */; };
+		ADED5F1A1D92A31800AB2D13 /* capitals_3857.geojson in Resources */ = {isa = PBXBuildFile; fileRef = ADED5EFB1D92A31800AB2D13 /* capitals_3857.geojson */; };
+		ADED5F1B1D92A31800AB2D13 /* carto-fonts.zip in Resources */ = {isa = PBXBuildFile; fileRef = ADED5EFC1D92A31800AB2D13 /* carto-fonts.zip */; };
+		ADED5F1C1D92A31800AB2D13 /* cartodark.zip in Resources */ = {isa = PBXBuildFile; fileRef = ADED5EFD1D92A31800AB2D13 /* cartodark.zip */; };
+		ADED5F1D1D92A31800AB2D13 /* direction_down.png in Resources */ = {isa = PBXBuildFile; fileRef = ADED5EFE1D92A31800AB2D13 /* direction_down.png */; };
+		ADED5F1E1D92A31800AB2D13 /* direction_up.png in Resources */ = {isa = PBXBuildFile; fileRef = ADED5EFF1D92A31800AB2D13 /* direction_up.png */; };
+		ADED5F1F1D92A31800AB2D13 /* direction_upthenleft.png in Resources */ = {isa = PBXBuildFile; fileRef = ADED5F001D92A31800AB2D13 /* direction_upthenleft.png */; };
+		ADED5F201D92A31800AB2D13 /* direction_upthenright.png in Resources */ = {isa = PBXBuildFile; fileRef = ADED5F011D92A31800AB2D13 /* direction_upthenright.png */; };
+		ADED5F211D92A31800AB2D13 /* fcd_auto.nml in Resources */ = {isa = PBXBuildFile; fileRef = ADED5F021D92A31800AB2D13 /* fcd_auto.nml */; };
+		ADED5F221D92A31800AB2D13 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = ADED5F031D92A31800AB2D13 /* info.png */; };
+		ADED5F231D92A31800AB2D13 /* info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADED5F041D92A31800AB2D13 /* info@2x.png */; };
+		ADED5F241D92A31800AB2D13 /* jefferson-building-ground-floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADED5F051D92A31800AB2D13 /* jefferson-building-ground-floor.jpg */; };
+		ADED5F251D92A31800AB2D13 /* looseleaf.zip in Resources */ = {isa = PBXBuildFile; fileRef = ADED5F061D92A31800AB2D13 /* looseleaf.zip */; };
+		ADED5F271D92A31800AB2D13 /* marker_black.png in Resources */ = {isa = PBXBuildFile; fileRef = ADED5F081D92A31800AB2D13 /* marker_black.png */; };
+		ADED5F281D92A31800AB2D13 /* marker_red.png in Resources */ = {isa = PBXBuildFile; fileRef = ADED5F091D92A31800AB2D13 /* marker_red.png */; };
+		ADED5F291D92A31800AB2D13 /* marker.png in Resources */ = {isa = PBXBuildFile; fileRef = ADED5F0A1D92A31800AB2D13 /* marker.png */; };
+		ADED5F2A1D92A31800AB2D13 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = ADED5F0B1D92A31800AB2D13 /* menu.png */; };
+		ADED5F2B1D92A31800AB2D13 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADED5F0C1D92A31800AB2D13 /* menu@2x.png */; };
+		ADED5F2C1D92A31800AB2D13 /* milktruck.nml in Resources */ = {isa = PBXBuildFile; fileRef = ADED5F0D1D92A31800AB2D13 /* milktruck.nml */; };
+		ADED5F2D1D92A31800AB2D13 /* nutibright-contourstyle.zip in Resources */ = {isa = PBXBuildFile; fileRef = ADED5F0E1D92A31800AB2D13 /* nutibright-contourstyle.zip */; };
+		ADED5F2E1D92A31800AB2D13 /* nutibright-v3.zip in Resources */ = {isa = PBXBuildFile; fileRef = ADED5F0F1D92A31800AB2D13 /* nutibright-v3.zip */; };
+		ADED5F2F1D92A31800AB2D13 /* nutiteq-dark.zip in Resources */ = {isa = PBXBuildFile; fileRef = ADED5F101D92A31800AB2D13 /* nutiteq-dark.zip */; };
+		ADED5F301D92A31800AB2D13 /* positron.zip in Resources */ = {isa = PBXBuildFile; fileRef = ADED5F111D92A31800AB2D13 /* positron.zip */; };
+		ADF6725A1F331AF800527D49 /* Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF672581F33106B00527D49 /* Sources.m */; };
+		ADFBF6CA1F4C19CB00F98741 /* BaseGeocodingController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFBF6C91F4C19CB00F98741 /* BaseGeocodingController.m */; };
+		ADFBF6CC1F4C2C5B00F98741 /* OnlineGeocodingController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFBF6CB1F4C2C5B00F98741 /* OnlineGeocodingController.m */; };
+		ADFBF6CF1F4C349100F98741 /* OfflineGeocodingController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFBF6CE1F4C349100F98741 /* OfflineGeocodingController.m */; };
+		ADFC10261E76EB10009DC903 /* BoundingBox.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFC10251E76EB10009DC903 /* BoundingBox.m */; };
+		ADFC102C1E76F190009DC903 /* OfflineRoutingController.mm in Sources */ = {isa = PBXBuildFile; fileRef = ADFC102B1E76F190009DC903 /* OfflineRoutingController.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADA1141C1DA399FF00481261 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A319B37187C4F8F0004A3CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A319B3E187C4F8F0004A3CB;
+			remoteInfo = "AdvancedMap.Objective-C";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CARTO00001D786E94003DCBC9 /* CartoMobileSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CartoMobileSDK.framework; path = "../../../dist/ios/CartoMobileSDK.framework"; sourceTree = "<group>"; };
+		2A319B3F187C4F8F0004A3CB /* AdvancedMap.Objective-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AdvancedMap.Objective-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A319B42187C4F8F0004A3CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2A319B44187C4F8F0004A3CB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2A319B46187C4F8F0004A3CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2AD24F6918FEDAA6000969F4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AdvancedMap/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		2AD24F6A18FEDAA6000969F4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AdvancedMap/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		2AD24F6E18FEDAA6000969F4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AdvancedMap/main.m; sourceTree = SOURCE_ROOT; };
+		2AD24F7318FEDAA6000969F4 /* AdvancedMap.Objective-C-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "AdvancedMap.Objective-C-Info.plist"; path = "AdvancedMap/AdvancedMap.Objective-C-Info.plist"; sourceTree = SOURCE_ROOT; };
+		2AD24F7F18FEDB5C000969F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = AdvancedMap/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		2AD24F8418FEDB89000969F4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AdvancedMap/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		2F466D07228AB813006D27EC /* icon_switches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_switches.png; sourceTree = "<group>"; };
+		2F466D09228ABE2F006D27EC /* MapOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapOptions.m; sourceTree = "<group>"; };
+		2F466D0A228ABE2F006D27EC /* MapOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapOptions.h; sourceTree = "<group>"; };
+		2F466D0E228ACAB9006D27EC /* MapOptionsPopupContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapOptionsPopupContent.swift; sourceTree = "<group>"; };
+		2F66E35B2295667700C3FAAA /* floor1.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = floor1.geojson; sourceTree = "<group>"; };
+		2F66E35C2295667700C3FAAA /* floor0.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = floor0.geojson; sourceTree = "<group>"; };
+		2F66E35F2295668100C3FAAA /* sgreconfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sgreconfig.json; sourceTree = "<group>"; };
+		2F66E362229566BC00C3FAAA /* IndoorRoutingController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IndoorRoutingController.mm; sourceTree = "<group>"; };
+		2F66E3652295696A00C3FAAA /* background_routing_indoor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_routing_indoor.png; sourceTree = "<group>"; };
+		2F66E36722956FE500C3FAAA /* icon_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_2.png; sourceTree = "<group>"; };
+		2F66E36822956FE500C3FAAA /* icon_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_1.png; sourceTree = "<group>"; };
+		2F66E36B2295797D00C3FAAA /* floors_routing.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = floors_routing.geojson; sourceTree = "<group>"; };
+		41488110D30CDAF74B940709 /* Pods-AdvancedMap.Objective-C.UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvancedMap.Objective-C.UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdvancedMap.Objective-C.UITests/Pods-AdvancedMap.Objective-C.UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		434F72035F7288C218D7B435 /* Pods-AdvancedMap.Objective-C.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvancedMap.Objective-C.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdvancedMap.Objective-C/Pods-AdvancedMap.Objective-C.debug.xcconfig"; sourceTree = "<group>"; };
+		4D13E27F1A6EB72600FA74DC /* CustomPopupController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CustomPopupController.mm; path = AdvancedMap/CustomPopupController.mm; sourceTree = SOURCE_ROOT; };
+		4D13E2821A6EB80200FA74DC /* MyCustomPopupHandler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MyCustomPopupHandler.mm; path = AdvancedMap/MyCustomPopupHandler.mm; sourceTree = SOURCE_ROOT; };
+		4D13E2841A6EB82600FA74DC /* MyCustomPopupHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCustomPopupHandler.h; path = AdvancedMap/MyCustomPopupHandler.h; sourceTree = SOURCE_ROOT; };
+		4D2BE7081A52F86F0013ABB3 /* MapBaseController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MapBaseController.mm; path = AdvancedMap/MapBaseController.mm; sourceTree = SOURCE_ROOT; };
+		4D2BE70A1A52F89C0013ABB3 /* MapBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapBaseController.h; path = AdvancedMap/MapBaseController.h; sourceTree = SOURCE_ROOT; };
+		4D4B1F5F1D018C2A001C2F30 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4DAF41AE1AD3C307004E7092 /* GroundOverlayController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GroundOverlayController.mm; path = AdvancedMap/GroundOverlayController.mm; sourceTree = SOURCE_ROOT; };
+		4DC850071A0E718100C5124F /* LauncherListController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LauncherListController.mm; path = AdvancedMap/LauncherListController.mm; sourceTree = SOURCE_ROOT; };
+		4DC850111A0E7DC500C5124F /* CustomRasterDataSourceController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CustomRasterDataSourceController.mm; path = AdvancedMap/CustomRasterDataSourceController.mm; sourceTree = SOURCE_ROOT; };
+		4DEB06CF1A10BDB7003D111C /* OverlaysController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OverlaysController.mm; path = AdvancedMap/OverlaysController.mm; sourceTree = SOURCE_ROOT; };
+		4DEB06D71A10CDC0003D111C /* BundledMapController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BundledMapController.mm; path = AdvancedMap/BundledMapController.mm; sourceTree = SOURCE_ROOT; };
+		4DEB06DF1A10DF0F003D111C /* LauncherListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LauncherListController.h; path = AdvancedMap/LauncherListController.h; sourceTree = SOURCE_ROOT; };
+		4DFC6C6C1B6224D300AF8E06 /* ClusteredMarkersController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ClusteredMarkersController.mm; path = AdvancedMap/ClusteredMarkersController.mm; sourceTree = SOURCE_ROOT; };
+		65284DDA3D95F82D5DF6B11D /* Pods-AdvancedMap.Objective-C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvancedMap.Objective-C.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdvancedMap.Objective-C/Pods-AdvancedMap.Objective-C.release.xcconfig"; sourceTree = "<group>"; };
+		AD02FEE866BAAE942D33FB01 /* Pods-AdvancedMap.Objective-C.UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvancedMap.Objective-C.UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdvancedMap.Objective-C.UITests/Pods-AdvancedMap.Objective-C.UITests.release.xcconfig"; sourceTree = "<group>"; };
+		AD2AD56D1F4B020C00F3C479 /* Package.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Package.h; sourceTree = "<group>"; };
+		AD2AD56E1F4B023D00F3C479 /* Package.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Package.mm; sourceTree = "<group>"; };
+		AD2AD5771F4B1ACC00F3C479 /* OfflineMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfflineMapController.m; sourceTree = "<group>"; };
+		AD32AF701F5EF41400ACF8AC /* rome_carto-streets.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rome_carto-streets.mbtiles"; sourceTree = "<group>"; };
+		AD3D629F1DD07F0F00C97356 /* icon_more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_more.png; path = ../../Assets/icon_more.png; sourceTree = "<group>"; };
+		AD3D62A01DD07F0F00C97356 /* icon_more@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_more@3x.png"; path = "../../Assets/icon_more@3x.png"; sourceTree = "<group>"; };
+		AD3FFFAC1F710FCC005642F9 /* Cities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cities.h; sourceTree = "<group>"; };
+		AD3FFFAD1F710FCC005642F9 /* Cities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cities.m; sourceTree = "<group>"; };
+		AD3FFFAF1F71237F005642F9 /* GeocodingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeocodingView.h; sourceTree = "<group>"; };
+		AD3FFFB01F71237F005642F9 /* GeocodingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeocodingView.m; sourceTree = "<group>"; };
+		AD3FFFB21F712538005642F9 /* GeocodingBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeocodingBaseView.h; sourceTree = "<group>"; };
+		AD3FFFB31F712538005642F9 /* GeocodingBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeocodingBaseView.m; sourceTree = "<group>"; };
+		AD3FFFB61F714D89005642F9 /* RouteClickListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteClickListener.h; sourceTree = "<group>"; };
+		AD3FFFB71F714D89005642F9 /* RouteClickListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteClickListener.m; sourceTree = "<group>"; };
+		AD3FFFB91F716384005642F9 /* banner_icon_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner_icon_info.png; sourceTree = "<group>"; };
+		AD46EB031F6FADC0004B662F /* GalleryRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryRow.swift; sourceTree = "<group>"; };
+		AD46EB041F6FADC0004B662F /* GalleryDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryDelegate.swift; sourceTree = "<group>"; };
+		AD46EB071F6FADC7004B662F /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AD46EB091F6FAFDB004B662F /* Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
+		AD46EB0B1F6FB317004B662F /* background_basic_package_manager.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_basic_package_manager.png; sourceTree = "<group>"; };
+		AD46EB0C1F6FB317004B662F /* background_bundled_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_bundled_map.png; sourceTree = "<group>"; };
+		AD46EB0D1F6FB317004B662F /* background_offline_geocoding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_offline_geocoding.png; sourceTree = "<group>"; };
+		AD46EB0E1F6FB317004B662F /* background_offline_reverse_geocoding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_offline_reverse_geocoding.png; sourceTree = "<group>"; };
+		AD46EB0F1F6FB317004B662F /* background_online_geocoding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_online_geocoding.png; sourceTree = "<group>"; };
+		AD46EB101F6FB317004B662F /* background_online_reverse_geocoding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_online_reverse_geocoding.png; sourceTree = "<group>"; };
+		AD46EB111F6FB317004B662F /* background_object_editing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_object_editing.png; sourceTree = "<group>"; };
+		AD46EB121F6FB317004B662F /* background_overlays.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_overlays.png; sourceTree = "<group>"; };
+		AD46EB131F6FB317004B662F /* background_clusters.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_clusters.png; sourceTree = "<group>"; };
+		AD46EB151F6FB317004B662F /* background_routing_offline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_routing_offline.png; sourceTree = "<group>"; };
+		AD46EB161F6FB317004B662F /* background_routing_online.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_routing_online.png; sourceTree = "<group>"; };
+		AD46EB171F6FB317004B662F /* background_wms.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_wms.png; sourceTree = "<group>"; };
+		AD46EB181F6FB317004B662F /* background_ground_overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_ground_overlay.png; sourceTree = "<group>"; };
+		AD46EB191F6FB317004B662F /* background_custom_raster_source.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_custom_raster_source.png; sourceTree = "<group>"; };
+		AD46EB1A1F6FB317004B662F /* background_basemaps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_basemaps.png; sourceTree = "<group>"; };
+		AD46EB1B1F6FB317004B662F /* background_custom_popup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_custom_popup.png; sourceTree = "<group>"; };
+		AD46EB1C1F6FB317004B662F /* background_gps_location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_gps_location.png; sourceTree = "<group>"; };
+		AD46EB1D1F6FB317004B662F /* background_screen_capture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_screen_capture.png; sourceTree = "<group>"; };
+		AD46EB1E1F6FB317004B662F /* background_advanced_package_manager.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_advanced_package_manager.png; sourceTree = "<group>"; };
+		AD46EB331F6FD2A4004B662F /* PackageDownloadBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackageDownloadBaseView.h; sourceTree = "<group>"; };
+		AD46EB341F6FD2A4004B662F /* PackageDownloadBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageDownloadBaseView.m; sourceTree = "<group>"; };
+		AD46EB3B1F6FD63A004B662F /* PackagePopupContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackagePopupContent.swift; sourceTree = "<group>"; };
+		AD46EB3C1F6FD63A004B662F /* PackageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageCell.swift; sourceTree = "<group>"; };
+		AD46EB3F1F6FEBB8004B662F /* PackageDownloadBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackageDownloadBaseController.h; sourceTree = "<group>"; };
+		AD46EB401F6FEBB8004B662F /* PackageDownloadBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageDownloadBaseController.m; sourceTree = "<group>"; };
+		AD46EB421F6FF07A004B662F /* PackageDownloadListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackageDownloadListener.h; sourceTree = "<group>"; };
+		AD46EB431F6FF07A004B662F /* PackageDownloadListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageDownloadListener.m; sourceTree = "<group>"; };
+		AD46EB451F700E65004B662F /* icon_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_close.png; sourceTree = "<group>"; };
+		AD46EB471F701C27004B662F /* icon_forward_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_forward_blue.png; sourceTree = "<group>"; };
+		AD46EB491F701C99004B662F /* icon_back_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_back_blue.png; sourceTree = "<group>"; };
+		AD4F91F71F6BE96400139F79 /* AdvancedMap.Objective-C-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdvancedMap.Objective-C-Bridging-Header.h"; sourceTree = "<group>"; };
+		AD4F91FA1F6BE9D600139F79 /* ProgressLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressLabel.swift; sourceTree = "<group>"; };
+		AD4F91FC1F6BEA0400139F79 /* AlertBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertBaseView.swift; sourceTree = "<group>"; };
+		AD4F91FE1F6BEFCE00139F79 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		AD4F92001F6BF3D000139F79 /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		AD4F92031F6BF40400139F79 /* PopupButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupButton.swift; sourceTree = "<group>"; };
+		AD4F92051F6BF40D00139F79 /* SlideInPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPopup.swift; sourceTree = "<group>"; };
+		AD4F92071F6BF41200139F79 /* PopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		AD4F92091F6BF41F00139F79 /* SlideInPopupHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPopupHeader.swift; sourceTree = "<group>"; };
+		AD4F920B1F6BF48200139F79 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		AD4F92111F6C13CF00139F79 /* MapBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapBaseView.h; sourceTree = "<group>"; };
+		AD4F92121F6C13CF00139F79 /* MapBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapBaseView.m; sourceTree = "<group>"; };
+		AD4F92151F6C250400139F79 /* icon_basemap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_basemap.png; sourceTree = "<group>"; };
+		AD4F92161F6C250400139F79 /* icon_global.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_global.png; sourceTree = "<group>"; };
+		AD4F92171F6C250400139F79 /* icon_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_info.png; sourceTree = "<group>"; };
+		AD4F92181F6C250400139F79 /* icon_language.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_language.png; sourceTree = "<group>"; };
+		AD54BF361DCB6C9900B0C190 /* icon_more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_more@2x.png"; path = "../../Assets/icon_more@2x.png"; sourceTree = "<group>"; };
+		AD589CE31DC0BDD3004E68B2 /* CaptureController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CaptureController.mm; sourceTree = "<group>"; };
+		AD589CE51DC0D1E7004E68B2 /* WMSMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSMapController.m; sourceTree = "<group>"; };
+		AD589CE71DC105A1004E68B2 /* GPSLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSLocationController.m; sourceTree = "<group>"; };
+		AD589CE91DC108E9004E68B2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AD5991471F4B306900CDF426 /* OnlineReverseGeocodingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnlineReverseGeocodingController.m; sourceTree = "<group>"; };
+		AD59914C1F4B3BB200CDF426 /* OfflineReverseGeocodingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfflineReverseGeocodingController.m; sourceTree = "<group>"; };
+		AD7A5D1D1D9ABE0700F5EE4E /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = "<absolute>"; };
+		AD90F9451E096C0E00E6EF51 /* BaseRoutingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseRoutingController.h; sourceTree = "<group>"; };
+		AD90F9461E096C6E00E6EF51 /* BaseRoutingController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaseRoutingController.mm; sourceTree = "<group>"; };
+		AD90F9481E096C8200E6EF51 /* OnlineRoutingController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OnlineRoutingController.mm; sourceTree = "<group>"; };
+		AD9B19B81DC1E5850025B767 /* cities15000.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = cities15000.geojson; path = ../../Assets/cities15000.geojson; sourceTree = "<group>"; };
+		ADA114171DA399FF00481261 /* AdvancedMap.Objective-C.UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AdvancedMap.Objective-C.UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA114191DA399FF00481261 /* AdvancedMap_Objective_C_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdvancedMap_Objective_C_UITests.m; sourceTree = "<group>"; };
+		ADA1141B1DA399FF00481261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA114211DA3A04F00481261 /* libPods-AdvancedMap.Objective-C.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AdvancedMap.Objective-C.a"; path = "../../../../Library/Developer/Xcode/DerivedData/AdvancedMap.Objective-C-eqqmxktzfefcpvcrcnopxenfhpsc/Build/Products/Debug-iphonesimulator/libPods-AdvancedMap.Objective-C.a"; sourceTree = "<group>"; };
+		ADB1488D1DC09C59009A899B /* BaseMapsController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaseMapsController.mm; sourceTree = "<group>"; };
+		ADB1488F1DC0A5AD009A899B /* VectorObjectEditingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VectorObjectEditingController.m; sourceTree = "<group>"; };
+		ADB148931DC0A6ED009A899B /* VectorElementSelectEventListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VectorElementSelectEventListener.mm; sourceTree = "<group>"; };
+		ADB148951DC0A6FB009A899B /* VectorElementDeselectEventListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VectorElementDeselectEventListener.mm; sourceTree = "<group>"; };
+		ADB148971DC0A708009A899B /* BasicEditEventListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BasicEditEventListener.mm; sourceTree = "<group>"; };
+		ADB148991DC0AC33009A899B /* BasicEditEventListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicEditEventListener.h; sourceTree = "<group>"; };
+		ADB1489A1DC0B073009A899B /* VectorElementDeselectEventListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VectorElementDeselectEventListener.h; sourceTree = "<group>"; };
+		ADB1489B1DC0B0BD009A899B /* VectorElementSelectEventListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VectorElementSelectEventListener.h; sourceTree = "<group>"; };
+		ADC02EA71F7525F200849DBD /* LanguagePopupContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguagePopupContent.swift; sourceTree = "<group>"; };
+		ADC02EA81F7525F200849DBD /* StylePopupContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylePopupContent.swift; sourceTree = "<group>"; };
+		ADC02EAB1F75263F00849DBD /* Languages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Languages.h; sourceTree = "<group>"; };
+		ADC02EAC1F75263F00849DBD /* Languages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Languages.m; sourceTree = "<group>"; };
+		ADC02EAE1F752BE100849DBD /* BaseMapsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMapsView.h; sourceTree = "<group>"; };
+		ADC02EAF1F752BE100849DBD /* BaseMapsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMapsView.m; sourceTree = "<group>"; };
+		ADC02EB11F753C1B00849DBD /* style_image_carto_darkmatter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = style_image_carto_darkmatter.png; sourceTree = "<group>"; };
+		ADC02EB21F753C1B00849DBD /* style_image_carto_positron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = style_image_carto_positron.png; sourceTree = "<group>"; };
+		ADC02EB31F753C1B00849DBD /* style_image_carto_voyager.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = style_image_carto_voyager.png; sourceTree = "<group>"; };
+		ADC02EB71F753C1B00849DBD /* style_image_nutiteq_darkmatter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = style_image_nutiteq_darkmatter.png; sourceTree = "<group>"; };
+		ADC02EB81F753C1B00849DBD /* style_image_nutiteq_positron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = style_image_nutiteq_positron.png; sourceTree = "<group>"; };
+		ADC02EB91F753C1B00849DBD /* style_image_nutiteq_voyager.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = style_image_nutiteq_voyager.png; sourceTree = "<group>"; };
+		ADC731441DBFA4C400E1CDCA /* VectorTileListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VectorTileListener.h; sourceTree = "<group>"; };
+		ADC731451DBFA5B000E1CDCA /* VectorTileListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VectorTileListener.mm; sourceTree = "<group>"; };
+		ADCB20891F4B2A5C00E6F8E0 /* BaseReverseGeocodingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseReverseGeocodingController.h; sourceTree = "<group>"; };
+		ADCB208A1F4B2A5C00E6F8E0 /* BaseReverseGeocodingController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaseReverseGeocodingController.mm; sourceTree = "<group>"; };
+		ADCF53BF1DC1FFA8004AD5C3 /* MyVectorElementEventListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyVectorElementEventListener.h; sourceTree = "<group>"; };
+		ADCF53C01DC1FFC3004AD5C3 /* MyVectorElementEventListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyVectorElementEventListener.mm; sourceTree = "<group>"; };
+		ADED5EF51D92A31800AB2D13 /* 852-map-toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "852-map-toolbar.png"; path = "../../Assets/852-map-toolbar.png"; sourceTree = "<group>"; };
+		ADED5EF61D92A31800AB2D13 /* 852-map-toolbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "852-map-toolbar@2x.png"; path = "../../Assets/852-map-toolbar@2x.png"; sourceTree = "<group>"; };
+		ADED5EF71D92A31800AB2D13 /* 852-map-toolbar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "852-map-toolbar@3x.png"; path = "../../Assets/852-map-toolbar@3x.png"; sourceTree = "<group>"; };
+		ADED5EF81D92A31800AB2D13 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = ../../Assets/arrow.png; sourceTree = "<group>"; };
+		ADED5EF91D92A31800AB2D13 /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow@2x.png"; path = "../../Assets/arrow@2x.png"; sourceTree = "<group>"; };
+		ADED5EFA1D92A31800AB2D13 /* basic.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = basic.zip; path = ../../Assets/basic.zip; sourceTree = "<group>"; };
+		ADED5EFB1D92A31800AB2D13 /* capitals_3857.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = capitals_3857.geojson; path = ../../Assets/capitals_3857.geojson; sourceTree = "<group>"; };
+		ADED5EFC1D92A31800AB2D13 /* carto-fonts.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = "carto-fonts.zip"; path = "../../Assets/carto-fonts.zip"; sourceTree = "<group>"; };
+		ADED5EFD1D92A31800AB2D13 /* cartodark.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = cartodark.zip; path = ../../Assets/cartodark.zip; sourceTree = "<group>"; };
+		ADED5EFE1D92A31800AB2D13 /* direction_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = direction_down.png; path = ../../Assets/direction_down.png; sourceTree = "<group>"; };
+		ADED5EFF1D92A31800AB2D13 /* direction_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = direction_up.png; path = ../../Assets/direction_up.png; sourceTree = "<group>"; };
+		ADED5F001D92A31800AB2D13 /* direction_upthenleft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = direction_upthenleft.png; path = ../../Assets/direction_upthenleft.png; sourceTree = "<group>"; };
+		ADED5F011D92A31800AB2D13 /* direction_upthenright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = direction_upthenright.png; path = ../../Assets/direction_upthenright.png; sourceTree = "<group>"; };
+		ADED5F021D92A31800AB2D13 /* fcd_auto.nml */ = {isa = PBXFileReference; lastKnownFileType = file; name = fcd_auto.nml; path = ../../Assets/fcd_auto.nml; sourceTree = "<group>"; };
+		ADED5F031D92A31800AB2D13 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info.png; path = ../../Assets/info.png; sourceTree = "<group>"; };
+		ADED5F041D92A31800AB2D13 /* info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "info@2x.png"; path = "../../Assets/info@2x.png"; sourceTree = "<group>"; };
+		ADED5F051D92A31800AB2D13 /* jefferson-building-ground-floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "jefferson-building-ground-floor.jpg"; path = "../../Assets/jefferson-building-ground-floor.jpg"; sourceTree = "<group>"; };
+		ADED5F061D92A31800AB2D13 /* looseleaf.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = looseleaf.zip; path = ../../Assets/looseleaf.zip; sourceTree = "<group>"; };
+		ADED5F081D92A31800AB2D13 /* marker_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = marker_black.png; path = ../../Assets/marker_black.png; sourceTree = "<group>"; };
+		ADED5F091D92A31800AB2D13 /* marker_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = marker_red.png; path = ../../Assets/marker_red.png; sourceTree = "<group>"; };
+		ADED5F0A1D92A31800AB2D13 /* marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = marker.png; path = ../../Assets/marker.png; sourceTree = "<group>"; };
+		ADED5F0B1D92A31800AB2D13 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = ../../Assets/menu.png; sourceTree = "<group>"; };
+		ADED5F0C1D92A31800AB2D13 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu@2x.png"; path = "../../Assets/menu@2x.png"; sourceTree = "<group>"; };
+		ADED5F0D1D92A31800AB2D13 /* milktruck.nml */ = {isa = PBXFileReference; lastKnownFileType = file; name = milktruck.nml; path = ../../Assets/milktruck.nml; sourceTree = "<group>"; };
+		ADED5F0E1D92A31800AB2D13 /* nutibright-contourstyle.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = "nutibright-contourstyle.zip"; path = "../../Assets/nutibright-contourstyle.zip"; sourceTree = "<group>"; };
+		ADED5F0F1D92A31800AB2D13 /* nutibright-v3.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = "nutibright-v3.zip"; path = "../../Assets/nutibright-v3.zip"; sourceTree = "<group>"; };
+		ADED5F101D92A31800AB2D13 /* nutiteq-dark.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = "nutiteq-dark.zip"; path = "../../Assets/nutiteq-dark.zip"; sourceTree = "<group>"; };
+		ADED5F111D92A31800AB2D13 /* positron.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = positron.zip; path = ../../Assets/positron.zip; sourceTree = "<group>"; };
+		ADF672581F33106B00527D49 /* Sources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sources.m; sourceTree = "<group>"; };
+		ADF672591F33169600527D49 /* Sources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sources.h; sourceTree = "<group>"; };
+		ADFBF6C81F4C19CB00F98741 /* BaseGeocodingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGeocodingController.h; sourceTree = "<group>"; };
+		ADFBF6C91F4C19CB00F98741 /* BaseGeocodingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGeocodingController.m; sourceTree = "<group>"; };
+		ADFBF6CB1F4C2C5B00F98741 /* OnlineGeocodingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnlineGeocodingController.m; sourceTree = "<group>"; };
+		ADFBF6CE1F4C349100F98741 /* OfflineGeocodingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfflineGeocodingController.m; sourceTree = "<group>"; };
+		ADFC10241E76EAFB009DC903 /* BoundingBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoundingBox.h; sourceTree = "<group>"; };
+		ADFC10251E76EB10009DC903 /* BoundingBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoundingBox.m; sourceTree = "<group>"; };
+		ADFC102B1E76F190009DC903 /* OfflineRoutingController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OfflineRoutingController.mm; sourceTree = "<group>"; };
+		B16806BB0D561BC919810AEC /* libPods-AdvancedMap.Objective-C.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AdvancedMap.Objective-C.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E918DC6CE207EA525F4C3D2C /* libPods-AdvancedMap.Objective-C.UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AdvancedMap.Objective-C.UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A319B3C187C4F8F0004A3CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD589CEA1DC108E9004E68B2 /* CoreLocation.framework in Frameworks */,
+				4D4B1F601D018C2A001C2F30 /* libz.tbd in Frameworks */,
+				2A319B45187C4F8F0004A3CB /* CoreGraphics.framework in Frameworks */,
+				2A319B47187C4F8F0004A3CB /* UIKit.framework in Frameworks */,
+				2A319B43187C4F8F0004A3CB /* Foundation.framework in Frameworks */,
+				AD7A5D1F1D9ABE0700F5EE4E /* GLKit.framework in Frameworks */,
+				CARTO00021D786E95003DCBC9 /* CartoMobileSDK.framework in Frameworks */,
+				9A2A46DC69277B2945334956 /* libPods-AdvancedMap.Objective-C.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA114141DA399FF00481261 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA114231DA3A24E00481261 /* libz.tbd in Frameworks */,
+				ADA114261DA3A2CE00481261 /* CoreGraphics.framework in Frameworks */,
+				ADA114271DA3A2D200481261 /* UIKit.framework in Frameworks */,
+				ADA114251DA3A2BD00481261 /* Foundation.framework in Frameworks */,
+				ADA114241DA3A25500481261 /* GLKit.framework in Frameworks */,
+				34B4A0362985542DCAC73775 /* libPods-AdvancedMap.Objective-C.UITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		228777A0AAD6EEE6DCD37725 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				434F72035F7288C218D7B435 /* Pods-AdvancedMap.Objective-C.debug.xcconfig */,
+				65284DDA3D95F82D5DF6B11D /* Pods-AdvancedMap.Objective-C.release.xcconfig */,
+				41488110D30CDAF74B940709 /* Pods-AdvancedMap.Objective-C.UITests.debug.xcconfig */,
+				AD02FEE866BAAE942D33FB01 /* Pods-AdvancedMap.Objective-C.UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2A319B36187C4F8F0004A3CB = {
+			isa = PBXGroup;
+			children = (
+				2A319B48187C4F8F0004A3CB /* AdvancedMap.Objective-C */,
+				ADA114181DA399FF00481261 /* AdvancedMap.Objective-C.UITests */,
+				2A319B41187C4F8F0004A3CB /* Frameworks */,
+				2A319B40187C4F8F0004A3CB /* Products */,
+				228777A0AAD6EEE6DCD37725 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		2A319B40187C4F8F0004A3CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A319B3F187C4F8F0004A3CB /* AdvancedMap.Objective-C.app */,
+				ADA114171DA399FF00481261 /* AdvancedMap.Objective-C.UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A319B41187C4F8F0004A3CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CARTO00001D786E94003DCBC9 /* CartoMobileSDK.framework */,
+				AD589CE91DC108E9004E68B2 /* CoreLocation.framework */,
+				ADA114211DA3A04F00481261 /* libPods-AdvancedMap.Objective-C.a */,
+				4D4B1F5F1D018C2A001C2F30 /* libz.tbd */,
+				AD7A5D1D1D9ABE0700F5EE4E /* GLKit.framework */,
+				2A319B42187C4F8F0004A3CB /* Foundation.framework */,
+				2A319B44187C4F8F0004A3CB /* CoreGraphics.framework */,
+				2A319B46187C4F8F0004A3CB /* UIKit.framework */,
+				B16806BB0D561BC919810AEC /* libPods-AdvancedMap.Objective-C.a */,
+				E918DC6CE207EA525F4C3D2C /* libPods-AdvancedMap.Objective-C.UITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A319B48187C4F8F0004A3CB /* AdvancedMap.Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+				AD3FFFAB1F710E5C005642F9 /* Model */,
+				AD4F91F61F6BE32000139F79 /* SwiftUI */,
+				AD4F92141F6C24F900139F79 /* Resources */,
+				ADFC10231E76EAEF009DC903 /* Utils */,
+				AD860A6B1D7DA103005994B2 /* BaseClasses */,
+				ADC7313A1DBFA2A400E1CDCA /* Sections */,
+				4DEB06DF1A10DF0F003D111C /* LauncherListController.h */,
+				4DC850071A0E718100C5124F /* LauncherListController.mm */,
+				ADED5EF41D92A30200AB2D13 /* Assets */,
+				2AD24F7E18FEDB5C000969F4 /* InfoPlist.strings */,
+				2AD24F6E18FEDAA6000969F4 /* main.m */,
+				2AD24F7318FEDAA6000969F4 /* AdvancedMap.Objective-C-Info.plist */,
+				2AD24F8418FEDB89000969F4 /* Images.xcassets */,
+				2AD24F6918FEDAA6000969F4 /* AppDelegate.h */,
+				2AD24F6A18FEDAA6000969F4 /* AppDelegate.m */,
+				ADF672591F33169600527D49 /* Sources.h */,
+				ADF672581F33106B00527D49 /* Sources.m */,
+			);
+			name = "AdvancedMap.Objective-C";
+			path = AdvancedMap;
+			sourceTree = "<group>";
+		};
+		AD2AD5791F4B20FE00F3C479 /* Geocoding */ = {
+			isa = PBXGroup;
+			children = (
+				AD59914C1F4B3BB200CDF426 /* OfflineReverseGeocodingController.m */,
+				ADFBF6CE1F4C349100F98741 /* OfflineGeocodingController.m */,
+				AD5991471F4B306900CDF426 /* OnlineReverseGeocodingController.m */,
+				ADFBF6CB1F4C2C5B00F98741 /* OnlineGeocodingController.m */,
+				AD2AD57A1F4B210400F3C479 /* Base */,
+				AD3FFFAF1F71237F005642F9 /* GeocodingView.h */,
+				AD3FFFB01F71237F005642F9 /* GeocodingView.m */,
+			);
+			name = Geocoding;
+			sourceTree = "<group>";
+		};
+		AD2AD57A1F4B210400F3C479 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AD3FFFB21F712538005642F9 /* GeocodingBaseView.h */,
+				AD3FFFB31F712538005642F9 /* GeocodingBaseView.m */,
+				ADFBF6C81F4C19CB00F98741 /* BaseGeocodingController.h */,
+				ADFBF6C91F4C19CB00F98741 /* BaseGeocodingController.m */,
+				ADCB20891F4B2A5C00E6F8E0 /* BaseReverseGeocodingController.h */,
+				ADCB208A1F4B2A5C00E6F8E0 /* BaseReverseGeocodingController.mm */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		AD3FFFAB1F710E5C005642F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F466D0A228ABE2F006D27EC /* MapOptions.h */,
+				2F466D09228ABE2F006D27EC /* MapOptions.m */,
+				AD3FFFAC1F710FCC005642F9 /* Cities.h */,
+				AD3FFFAD1F710FCC005642F9 /* Cities.m */,
+				ADC02EAB1F75263F00849DBD /* Languages.h */,
+				ADC02EAC1F75263F00849DBD /* Languages.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AD3FFFB51F714D71005642F9 /* Listener */ = {
+			isa = PBXGroup;
+			children = (
+				AD3FFFB61F714D89005642F9 /* RouteClickListener.h */,
+				AD3FFFB71F714D89005642F9 /* RouteClickListener.m */,
+			);
+			name = Listener;
+			sourceTree = "<group>";
+		};
+		AD46EB021F6FA9F0004B662F /* Launcher List */ = {
+			isa = PBXGroup;
+			children = (
+				AD46EB071F6FADC7004B662F /* MainView.swift */,
+				AD46EB031F6FADC0004B662F /* GalleryRow.swift */,
+				AD46EB041F6FADC0004B662F /* GalleryDelegate.swift */,
+				AD46EB091F6FAFDB004B662F /* Sample.swift */,
+			);
+			name = "Launcher List";
+			sourceTree = "<group>";
+		};
+		AD46EB3A1F6FD5EC004B662F /* PopupContentViews */ = {
+			isa = PBXGroup;
+			children = (
+				2F466D0E228ACAB9006D27EC /* MapOptionsPopupContent.swift */,
+				ADC02EA71F7525F200849DBD /* LanguagePopupContent.swift */,
+				ADC02EA81F7525F200849DBD /* StylePopupContent.swift */,
+				AD46EB3B1F6FD63A004B662F /* PackagePopupContent.swift */,
+				AD46EB3C1F6FD63A004B662F /* PackageCell.swift */,
+			);
+			name = PopupContentViews;
+			sourceTree = "<group>";
+		};
+		AD4F91F61F6BE32000139F79 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				AD46EB3A1F6FD5EC004B662F /* PopupContentViews */,
+				AD46EB021F6FA9F0004B662F /* Launcher List */,
+				AD4F920B1F6BF48200139F79 /* Device.swift */,
+				AD4F92021F6BF3F600139F79 /* SlideInPopup */,
+				AD4F92001F6BF3D000139F79 /* Banner.swift */,
+				AD4F91FE1F6BEFCE00139F79 /* Colors.swift */,
+				AD4F91FC1F6BEA0400139F79 /* AlertBaseView.swift */,
+				AD4F91FA1F6BE9D600139F79 /* ProgressLabel.swift */,
+				AD4F91F71F6BE96400139F79 /* AdvancedMap.Objective-C-Bridging-Header.h */,
+			);
+			name = SwiftUI;
+			sourceTree = "<group>";
+		};
+		AD4F92021F6BF3F600139F79 /* SlideInPopup */ = {
+			isa = PBXGroup;
+			children = (
+				AD4F92091F6BF41F00139F79 /* SlideInPopupHeader.swift */,
+				AD4F92071F6BF41200139F79 /* PopupView.swift */,
+				AD4F92051F6BF40D00139F79 /* SlideInPopup.swift */,
+				AD4F92031F6BF40400139F79 /* PopupButton.swift */,
+			);
+			name = SlideInPopup;
+			sourceTree = "<group>";
+		};
+		AD4F92101F6C13AE00139F79 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD4F92111F6C13CF00139F79 /* MapBaseView.h */,
+				AD4F92121F6C13CF00139F79 /* MapBaseView.m */,
+				AD46EB331F6FD2A4004B662F /* PackageDownloadBaseView.h */,
+				AD46EB341F6FD2A4004B662F /* PackageDownloadBaseView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		AD4F92141F6C24F900139F79 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2F66E36822956FE500C3FAAA /* icon_1.png */,
+				2F66E36722956FE500C3FAAA /* icon_2.png */,
+				2F66E3652295696A00C3FAAA /* background_routing_indoor.png */,
+				ADC02EB11F753C1B00849DBD /* style_image_carto_darkmatter.png */,
+				ADC02EB21F753C1B00849DBD /* style_image_carto_positron.png */,
+				ADC02EB31F753C1B00849DBD /* style_image_carto_voyager.png */,
+				ADC02EB71F753C1B00849DBD /* style_image_nutiteq_darkmatter.png */,
+				ADC02EB81F753C1B00849DBD /* style_image_nutiteq_positron.png */,
+				ADC02EB91F753C1B00849DBD /* style_image_nutiteq_voyager.png */,
+				AD3FFFB91F716384005642F9 /* banner_icon_info.png */,
+				AD46EB491F701C99004B662F /* icon_back_blue.png */,
+				AD46EB471F701C27004B662F /* icon_forward_blue.png */,
+				AD46EB451F700E65004B662F /* icon_close.png */,
+				AD46EB0B1F6FB317004B662F /* background_basic_package_manager.png */,
+				AD46EB0C1F6FB317004B662F /* background_bundled_map.png */,
+				AD46EB0D1F6FB317004B662F /* background_offline_geocoding.png */,
+				AD46EB0E1F6FB317004B662F /* background_offline_reverse_geocoding.png */,
+				AD46EB0F1F6FB317004B662F /* background_online_geocoding.png */,
+				AD46EB101F6FB317004B662F /* background_online_reverse_geocoding.png */,
+				AD46EB111F6FB317004B662F /* background_object_editing.png */,
+				AD46EB121F6FB317004B662F /* background_overlays.png */,
+				AD46EB131F6FB317004B662F /* background_clusters.png */,
+				AD46EB151F6FB317004B662F /* background_routing_offline.png */,
+				AD46EB161F6FB317004B662F /* background_routing_online.png */,
+				AD46EB171F6FB317004B662F /* background_wms.png */,
+				AD46EB181F6FB317004B662F /* background_ground_overlay.png */,
+				AD46EB191F6FB317004B662F /* background_custom_raster_source.png */,
+				AD46EB1A1F6FB317004B662F /* background_basemaps.png */,
+				AD46EB1B1F6FB317004B662F /* background_custom_popup.png */,
+				AD46EB1C1F6FB317004B662F /* background_gps_location.png */,
+				AD46EB1D1F6FB317004B662F /* background_screen_capture.png */,
+				AD46EB1E1F6FB317004B662F /* background_advanced_package_manager.png */,
+				AD4F92151F6C250400139F79 /* icon_basemap.png */,
+				AD4F92161F6C250400139F79 /* icon_global.png */,
+				AD4F92171F6C250400139F79 /* icon_info.png */,
+				AD4F92181F6C250400139F79 /* icon_language.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AD54BF351DCB601C00B0C190 /* Overlays */ = {
+			isa = PBXGroup;
+			children = (
+				4DEB06CF1A10BDB7003D111C /* OverlaysController.mm */,
+				ADCF53BF1DC1FFA8004AD5C3 /* MyVectorElementEventListener.h */,
+				ADCF53C01DC1FFC3004AD5C3 /* MyVectorElementEventListener.mm */,
+			);
+			name = Overlays;
+			sourceTree = "<group>";
+		};
+		AD860A6B1D7DA103005994B2 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				ADC731491DBFAC6500E1CDCA /* Listeners */,
+				AD4F92101F6C13AE00139F79 /* Views */,
+				ADC731481DBFAC6000E1CDCA /* Controllers */,
+			);
+			name = BaseClasses;
+			sourceTree = "<group>";
+		};
+		AD90F9441E096BF700E6EF51 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				AD3FFFB51F714D71005642F9 /* Listener */,
+				ADFC102D1E76F3E4009DC903 /* Base */,
+				AD90F9481E096C8200E6EF51 /* OnlineRoutingController.mm */,
+				ADFC102B1E76F190009DC903 /* OfflineRoutingController.mm */,
+				2F66E362229566BC00C3FAAA /* IndoorRoutingController.mm */,
+			);
+			name = Routing;
+			sourceTree = "<group>";
+		};
+		ADA114181DA399FF00481261 /* AdvancedMap.Objective-C.UITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADA114191DA399FF00481261 /* AdvancedMap_Objective_C_UITests.m */,
+				ADA1141B1DA399FF00481261 /* Info.plist */,
+			);
+			path = "AdvancedMap.Objective-C.UITests";
+			sourceTree = "<group>";
+		};
+		ADB148911DC0A6CC009A899B /* BasicEditableOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				ADB1488F1DC0A5AD009A899B /* VectorObjectEditingController.m */,
+				ADB148921DC0A6D7009A899B /* Listeners */,
+			);
+			name = BasicEditableOverlay;
+			sourceTree = "<group>";
+		};
+		ADB148921DC0A6D7009A899B /* Listeners */ = {
+			isa = PBXGroup;
+			children = (
+				ADB1489B1DC0B0BD009A899B /* VectorElementSelectEventListener.h */,
+				ADB148931DC0A6ED009A899B /* VectorElementSelectEventListener.mm */,
+				ADB1489A1DC0B073009A899B /* VectorElementDeselectEventListener.h */,
+				ADB148951DC0A6FB009A899B /* VectorElementDeselectEventListener.mm */,
+				ADB148991DC0AC33009A899B /* BasicEditEventListener.h */,
+				ADB148971DC0A708009A899B /* BasicEditEventListener.mm */,
+			);
+			name = Listeners;
+			sourceTree = "<group>";
+		};
+		ADC7313A1DBFA2A400E1CDCA /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				AD2AD5791F4B20FE00F3C479 /* Geocoding */,
+				AD90F9441E096BF700E6EF51 /* Routing */,
+				ADC731421DBFA36D00E1CDCA /* BaseMap */,
+				ADC731411DBFA35000E1CDCA /* OverlayDataSource */,
+				ADC7313F1DBFA34000E1CDCA /* VectorObjects */,
+				ADC7313E1DBFA33800E1CDCA /* OfflineMap */,
+				ADC7313D1DBFA33100E1CDCA /* Other */,
+			);
+			name = Sections;
+			sourceTree = "<group>";
+		};
+		ADC7313D1DBFA33100E1CDCA /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				AD589CE31DC0BDD3004E68B2 /* CaptureController.mm */,
+				ADC731471DBFA78D00E1CDCA /* CustomPopup */,
+				AD589CE71DC105A1004E68B2 /* GPSLocationController.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		ADC7313E1DBFA33800E1CDCA /* OfflineMap */ = {
+			isa = PBXGroup;
+			children = (
+				AD2AD5771F4B1ACC00F3C479 /* OfflineMapController.m */,
+				4DEB06D71A10CDC0003D111C /* BundledMapController.mm */,
+			);
+			name = OfflineMap;
+			sourceTree = "<group>";
+		};
+		ADC7313F1DBFA34000E1CDCA /* VectorObjects */ = {
+			isa = PBXGroup;
+			children = (
+				4DFC6C6C1B6224D300AF8E06 /* ClusteredMarkersController.mm */,
+				AD54BF351DCB601C00B0C190 /* Overlays */,
+				ADB148911DC0A6CC009A899B /* BasicEditableOverlay */,
+			);
+			name = VectorObjects;
+			sourceTree = "<group>";
+		};
+		ADC731411DBFA35000E1CDCA /* OverlayDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				4DC850111A0E7DC500C5124F /* CustomRasterDataSourceController.mm */,
+				4DAF41AE1AD3C307004E7092 /* GroundOverlayController.mm */,
+				AD589CE51DC0D1E7004E68B2 /* WMSMapController.m */,
+			);
+			name = OverlayDataSource;
+			sourceTree = "<group>";
+		};
+		ADC731421DBFA36D00E1CDCA /* BaseMap */ = {
+			isa = PBXGroup;
+			children = (
+				ADB1488D1DC09C59009A899B /* BaseMapsController.mm */,
+				ADC02EAE1F752BE100849DBD /* BaseMapsView.h */,
+				ADC02EAF1F752BE100849DBD /* BaseMapsView.m */,
+			);
+			name = BaseMap;
+			sourceTree = "<group>";
+		};
+		ADC731471DBFA78D00E1CDCA /* CustomPopup */ = {
+			isa = PBXGroup;
+			children = (
+				4D13E27F1A6EB72600FA74DC /* CustomPopupController.mm */,
+				4D13E2821A6EB80200FA74DC /* MyCustomPopupHandler.mm */,
+				4D13E2841A6EB82600FA74DC /* MyCustomPopupHandler.h */,
+			);
+			name = CustomPopup;
+			sourceTree = "<group>";
+		};
+		ADC731481DBFAC6000E1CDCA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D2BE70A1A52F89C0013ABB3 /* MapBaseController.h */,
+				4D2BE7081A52F86F0013ABB3 /* MapBaseController.mm */,
+				AD46EB3F1F6FEBB8004B662F /* PackageDownloadBaseController.h */,
+				AD46EB401F6FEBB8004B662F /* PackageDownloadBaseController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		ADC731491DBFAC6500E1CDCA /* Listeners */ = {
+			isa = PBXGroup;
+			children = (
+				ADC731441DBFA4C400E1CDCA /* VectorTileListener.h */,
+				ADC731451DBFA5B000E1CDCA /* VectorTileListener.mm */,
+				AD46EB421F6FF07A004B662F /* PackageDownloadListener.h */,
+				AD46EB431F6FF07A004B662F /* PackageDownloadListener.m */,
+			);
+			name = Listeners;
+			sourceTree = "<group>";
+		};
+		ADED5EF41D92A30200AB2D13 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2F66E36B2295797D00C3FAAA /* floors_routing.geojson */,
+				2F66E35F2295668100C3FAAA /* sgreconfig.json */,
+				2F66E35C2295667700C3FAAA /* floor0.geojson */,
+				2F66E35B2295667700C3FAAA /* floor1.geojson */,
+				2F466D07228AB813006D27EC /* icon_switches.png */,
+				AD32AF701F5EF41400ACF8AC /* rome_carto-streets.mbtiles */,
+				ADED5EF51D92A31800AB2D13 /* 852-map-toolbar.png */,
+				ADED5EF61D92A31800AB2D13 /* 852-map-toolbar@2x.png */,
+				ADED5EF71D92A31800AB2D13 /* 852-map-toolbar@3x.png */,
+				ADED5EF81D92A31800AB2D13 /* arrow.png */,
+				ADED5EF91D92A31800AB2D13 /* arrow@2x.png */,
+				ADED5EFA1D92A31800AB2D13 /* basic.zip */,
+				ADED5EFB1D92A31800AB2D13 /* capitals_3857.geojson */,
+				ADED5EFC1D92A31800AB2D13 /* carto-fonts.zip */,
+				AD54BF361DCB6C9900B0C190 /* icon_more@2x.png */,
+				ADED5EFD1D92A31800AB2D13 /* cartodark.zip */,
+				ADED5EFE1D92A31800AB2D13 /* direction_down.png */,
+				ADED5EFF1D92A31800AB2D13 /* direction_up.png */,
+				AD3D629F1DD07F0F00C97356 /* icon_more.png */,
+				AD3D62A01DD07F0F00C97356 /* icon_more@3x.png */,
+				ADED5F001D92A31800AB2D13 /* direction_upthenleft.png */,
+				ADED5F011D92A31800AB2D13 /* direction_upthenright.png */,
+				ADED5F021D92A31800AB2D13 /* fcd_auto.nml */,
+				ADED5F031D92A31800AB2D13 /* info.png */,
+				ADED5F041D92A31800AB2D13 /* info@2x.png */,
+				ADED5F051D92A31800AB2D13 /* jefferson-building-ground-floor.jpg */,
+				ADED5F061D92A31800AB2D13 /* looseleaf.zip */,
+				ADED5F081D92A31800AB2D13 /* marker_black.png */,
+				AD9B19B81DC1E5850025B767 /* cities15000.geojson */,
+				ADED5F091D92A31800AB2D13 /* marker_red.png */,
+				ADED5F0A1D92A31800AB2D13 /* marker.png */,
+				ADED5F0B1D92A31800AB2D13 /* menu.png */,
+				ADED5F0C1D92A31800AB2D13 /* menu@2x.png */,
+				ADED5F0D1D92A31800AB2D13 /* milktruck.nml */,
+				ADED5F0E1D92A31800AB2D13 /* nutibright-contourstyle.zip */,
+				ADED5F0F1D92A31800AB2D13 /* nutibright-v3.zip */,
+				ADED5F101D92A31800AB2D13 /* nutiteq-dark.zip */,
+				ADED5F111D92A31800AB2D13 /* positron.zip */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		ADFC10231E76EAEF009DC903 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AD2AD56D1F4B020C00F3C479 /* Package.h */,
+				AD2AD56E1F4B023D00F3C479 /* Package.mm */,
+				ADFC10241E76EAFB009DC903 /* BoundingBox.h */,
+				ADFC10251E76EB10009DC903 /* BoundingBox.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		ADFC102D1E76F3E4009DC903 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AD90F9451E096C0E00E6EF51 /* BaseRoutingController.h */,
+				AD90F9461E096C6E00E6EF51 /* BaseRoutingController.mm */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A319B3E187C4F8F0004A3CB /* AdvancedMap.Objective-C */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A319B74187C4F8F0004A3CB /* Build configuration list for PBXNativeTarget "AdvancedMap.Objective-C" */;
+			buildPhases = (
+				41279C8D40EDB3B5E58DA99F /* [CP] Check Pods Manifest.lock */,
+				2A319B3B187C4F8F0004A3CB /* Sources */,
+				2A319B3C187C4F8F0004A3CB /* Frameworks */,
+				2A319B3D187C4F8F0004A3CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AdvancedMap.Objective-C";
+			productName = sdk_3d_ios_app;
+			productReference = 2A319B3F187C4F8F0004A3CB /* AdvancedMap.Objective-C.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADA114161DA399FF00481261 /* AdvancedMap.Objective-C.UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADA114201DA399FF00481261 /* Build configuration list for PBXNativeTarget "AdvancedMap.Objective-C.UITests" */;
+			buildPhases = (
+				D23D83F2BDC0EEB488B16630 /* [CP] Check Pods Manifest.lock */,
+				ADA114131DA399FF00481261 /* Sources */,
+				ADA114141DA399FF00481261 /* Frameworks */,
+				ADA114151DA399FF00481261 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADA1141D1DA399FF00481261 /* PBXTargetDependency */,
+			);
+			name = "AdvancedMap.Objective-C.UITests";
+			productName = "AdvancedMap.Objective-C.UITests";
+			productReference = ADA114171DA399FF00481261 /* AdvancedMap.Objective-C.UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A319B37187C4F8F0004A3CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2620;
+				ORGANIZATIONNAME = Nutiteq;
+				TargetAttributes = {
+					2A319B3E187C4F8F0004A3CB = {
+						LastSwiftMigration = 0830;
+					};
+					ADA114161DA399FF00481261 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2A319B3E187C4F8F0004A3CB;
+					};
+				};
+			};
+			buildConfigurationList = 2A319B3A187C4F8F0004A3CB /* Build configuration list for PBXProject "AdvancedMap.Objective-C" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A319B36187C4F8F0004A3CB;
+			productRefGroup = 2A319B40187C4F8F0004A3CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A319B3E187C4F8F0004A3CB /* AdvancedMap.Objective-C */,
+				ADA114161DA399FF00481261 /* AdvancedMap.Objective-C.UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A319B3D187C4F8F0004A3CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADED5F141D92A31800AB2D13 /* 852-map-toolbar.png in Resources */,
+				AD46EB271F6FB317004B662F /* background_clusters.png in Resources */,
+				ADED5F271D92A31800AB2D13 /* marker_black.png in Resources */,
+				ADED5F191D92A31800AB2D13 /* basic.zip in Resources */,
+				AD9B19B91DC1E5850025B767 /* cities15000.geojson in Resources */,
+				ADED5F2A1D92A31800AB2D13 /* menu.png in Resources */,
+				AD54BF371DCB6C9900B0C190 /* icon_more@2x.png in Resources */,
+				ADED5F251D92A31800AB2D13 /* looseleaf.zip in Resources */,
+				ADED5F2B1D92A31800AB2D13 /* menu@2x.png in Resources */,
+				2AD24F8518FEDB89000969F4 /* Images.xcassets in Resources */,
+				AD4F92191F6C250400139F79 /* icon_basemap.png in Resources */,
+				ADED5F2E1D92A31800AB2D13 /* nutibright-v3.zip in Resources */,
+				2F66E36922956FE600C3FAAA /* icon_2.png in Resources */,
+				2F66E3662295696A00C3FAAA /* background_routing_indoor.png in Resources */,
+				AD46EB2E1F6FB317004B662F /* background_basemaps.png in Resources */,
+				ADED5F291D92A31800AB2D13 /* marker.png in Resources */,
+				2F66E3602295668100C3FAAA /* sgreconfig.json in Resources */,
+				ADED5F171D92A31800AB2D13 /* arrow.png in Resources */,
+				ADED5F151D92A31800AB2D13 /* 852-map-toolbar@2x.png in Resources */,
+				AD46EB251F6FB317004B662F /* background_object_editing.png in Resources */,
+				ADED5F181D92A31800AB2D13 /* arrow@2x.png in Resources */,
+				AD46EB301F6FB317004B662F /* background_gps_location.png in Resources */,
+				AD4F921B1F6C250400139F79 /* icon_info.png in Resources */,
+				ADED5F1E1D92A31800AB2D13 /* direction_up.png in Resources */,
+				AD46EB461F700E65004B662F /* icon_close.png in Resources */,
+				ADC02EBA1F753C1B00849DBD /* style_image_carto_darkmatter.png in Resources */,
+				ADC02EC01F753C1B00849DBD /* style_image_nutiteq_darkmatter.png in Resources */,
+				ADC02EBC1F753C1B00849DBD /* style_image_carto_voyager.png in Resources */,
+				ADED5F1F1D92A31800AB2D13 /* direction_upthenleft.png in Resources */,
+				AD46EB311F6FB317004B662F /* background_screen_capture.png in Resources */,
+				AD3FFFBA1F716384005642F9 /* banner_icon_info.png in Resources */,
+				ADED5F1D1D92A31800AB2D13 /* direction_down.png in Resources */,
+				ADED5F221D92A31800AB2D13 /* info.png in Resources */,
+				ADED5F301D92A31800AB2D13 /* positron.zip in Resources */,
+				AD3D62A11DD07F0F00C97356 /* icon_more.png in Resources */,
+				ADED5F2C1D92A31800AB2D13 /* milktruck.nml in Resources */,
+				2F66E35E2295667700C3FAAA /* floor0.geojson in Resources */,
+				ADED5F231D92A31800AB2D13 /* info@2x.png in Resources */,
+				AD46EB321F6FB317004B662F /* background_advanced_package_manager.png in Resources */,
+				AD46EB291F6FB317004B662F /* background_routing_offline.png in Resources */,
+				ADED5F201D92A31800AB2D13 /* direction_upthenright.png in Resources */,
+				AD46EB2C1F6FB317004B662F /* background_ground_overlay.png in Resources */,
+				AD46EB2A1F6FB317004B662F /* background_routing_online.png in Resources */,
+				2F66E36C2295797E00C3FAAA /* floors_routing.geojson in Resources */,
+				2F66E36A22956FE600C3FAAA /* icon_1.png in Resources */,
+				AD46EB241F6FB317004B662F /* background_online_reverse_geocoding.png in Resources */,
+				AD46EB211F6FB317004B662F /* background_offline_geocoding.png in Resources */,
+				AD46EB261F6FB317004B662F /* background_overlays.png in Resources */,
+				ADED5F161D92A31800AB2D13 /* 852-map-toolbar@3x.png in Resources */,
+				AD46EB2B1F6FB317004B662F /* background_wms.png in Resources */,
+				ADED5F241D92A31800AB2D13 /* jefferson-building-ground-floor.jpg in Resources */,
+				ADED5F2F1D92A31800AB2D13 /* nutiteq-dark.zip in Resources */,
+				ADC02EC21F753C1B00849DBD /* style_image_nutiteq_voyager.png in Resources */,
+				ADC02EC11F753C1B00849DBD /* style_image_nutiteq_positron.png in Resources */,
+				AD46EB2F1F6FB317004B662F /* background_custom_popup.png in Resources */,
+				AD46EB4A1F701C99004B662F /* icon_back_blue.png in Resources */,
+				AD3D62A21DD07F0F00C97356 /* icon_more@3x.png in Resources */,
+				AD46EB201F6FB317004B662F /* background_bundled_map.png in Resources */,
+				AD46EB2D1F6FB317004B662F /* background_custom_raster_source.png in Resources */,
+				AD46EB1F1F6FB317004B662F /* background_basic_package_manager.png in Resources */,
+				AD46EB221F6FB317004B662F /* background_offline_reverse_geocoding.png in Resources */,
+				ADED5F281D92A31800AB2D13 /* marker_red.png in Resources */,
+				AD46EB231F6FB317004B662F /* background_online_geocoding.png in Resources */,
+				AD4F921C1F6C250400139F79 /* icon_language.png in Resources */,
+				2F466D08228AB813006D27EC /* icon_switches.png in Resources */,
+				AD4F921A1F6C250400139F79 /* icon_global.png in Resources */,
+				ADED5F1A1D92A31800AB2D13 /* capitals_3857.geojson in Resources */,
+				ADED5F2D1D92A31800AB2D13 /* nutibright-contourstyle.zip in Resources */,
+				ADED5F211D92A31800AB2D13 /* fcd_auto.nml in Resources */,
+				ADED5F1B1D92A31800AB2D13 /* carto-fonts.zip in Resources */,
+				AD46EB481F701C27004B662F /* icon_forward_blue.png in Resources */,
+				ADC02EBB1F753C1B00849DBD /* style_image_carto_positron.png in Resources */,
+				AD32AF711F5EF49700ACF8AC /* rome_carto-streets.mbtiles in Resources */,
+				2F66E35D2295667700C3FAAA /* floor1.geojson in Resources */,
+				ADED5F1C1D92A31800AB2D13 /* cartodark.zip in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA114151DA399FF00481261 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41279C8D40EDB3B5E58DA99F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdvancedMap.Objective-C-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D23D83F2BDC0EEB488B16630 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdvancedMap.Objective-C.UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A319B3B187C4F8F0004A3CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD46EB061F6FADC0004B662F /* GalleryDelegate.swift in Sources */,
+				AD4F92041F6BF40400139F79 /* PopupButton.swift in Sources */,
+				AD46EB0A1F6FAFDB004B662F /* Sample.swift in Sources */,
+				AD4F92061F6BF40D00139F79 /* SlideInPopup.swift in Sources */,
+				ADB148981DC0A708009A899B /* BasicEditEventListener.mm in Sources */,
+				ADB148941DC0A6ED009A899B /* VectorElementSelectEventListener.mm in Sources */,
+				4DEB06D01A10BDB7003D111C /* OverlaysController.mm in Sources */,
+				2AD24F7918FEDAA6000969F4 /* main.m in Sources */,
+				AD5991481F4B306900CDF426 /* OnlineReverseGeocodingController.m in Sources */,
+				AD46EB3D1F6FD63A004B662F /* PackagePopupContent.swift in Sources */,
+				AD4F92081F6BF41200139F79 /* PopupView.swift in Sources */,
+				AD46EB351F6FD2A4004B662F /* PackageDownloadBaseView.m in Sources */,
+				ADF6725A1F331AF800527D49 /* Sources.m in Sources */,
+				AD589CE61DC0D1E7004E68B2 /* WMSMapController.m in Sources */,
+				ADC02EAA1F7525F200849DBD /* StylePopupContent.swift in Sources */,
+				AD46EB081F6FADC7004B662F /* MainView.swift in Sources */,
+				4DFC6C6D1B6224D300AF8E06 /* ClusteredMarkersController.mm in Sources */,
+				ADC02EAD1F75263F00849DBD /* Languages.m in Sources */,
+				ADFBF6CA1F4C19CB00F98741 /* BaseGeocodingController.m in Sources */,
+				ADFC102C1E76F190009DC903 /* OfflineRoutingController.mm in Sources */,
+				ADB1488E1DC09C59009A899B /* BaseMapsController.mm in Sources */,
+				AD4F92011F6BF3D000139F79 /* Banner.swift in Sources */,
+				ADB148901DC0A5AD009A899B /* VectorObjectEditingController.m in Sources */,
+				AD46EB3E1F6FD63A004B662F /* PackageCell.swift in Sources */,
+				4DAF41AF1AD3C307004E7092 /* GroundOverlayController.mm in Sources */,
+				AD3FFFB41F712538005642F9 /* GeocodingBaseView.m in Sources */,
+				AD4F920A1F6BF41F00139F79 /* SlideInPopupHeader.swift in Sources */,
+				ADFC10261E76EB10009DC903 /* BoundingBox.m in Sources */,
+				ADC02EA91F7525F200849DBD /* LanguagePopupContent.swift in Sources */,
+				2F466D0B228ABE2F006D27EC /* MapOptions.m in Sources */,
+				AD90F9491E096C8200E6EF51 /* OnlineRoutingController.mm in Sources */,
+				ADFBF6CC1F4C2C5B00F98741 /* OnlineGeocodingController.m in Sources */,
+				AD4F92131F6C13CF00139F79 /* MapBaseView.m in Sources */,
+				4D2BE7091A52F86F0013ABB3 /* MapBaseController.mm in Sources */,
+				AD46EB411F6FEBB8004B662F /* PackageDownloadBaseController.m in Sources */,
+				4D13E2831A6EB80200FA74DC /* MyCustomPopupHandler.mm in Sources */,
+				AD46EB051F6FADC0004B662F /* GalleryRow.swift in Sources */,
+				AD589CE81DC105A1004E68B2 /* GPSLocationController.m in Sources */,
+				AD3FFFAE1F710FCC005642F9 /* Cities.m in Sources */,
+				AD90F9471E096C6E00E6EF51 /* BaseRoutingController.mm in Sources */,
+				AD4F91FF1F6BEFCE00139F79 /* Colors.swift in Sources */,
+				AD2AD5781F4B1ACC00F3C479 /* OfflineMapController.m in Sources */,
+				AD4F91FB1F6BE9D600139F79 /* ProgressLabel.swift in Sources */,
+				2F66E364229566BC00C3FAAA /* IndoorRoutingController.mm in Sources */,
+				4DC850121A0E7DC500C5124F /* CustomRasterDataSourceController.mm in Sources */,
+				ADFBF6CF1F4C349100F98741 /* OfflineGeocodingController.m in Sources */,
+				AD443BC41DD0877E00EE65A9 /* VectorTileListener.mm in Sources */,
+				4DEB06D81A10CDC0003D111C /* BundledMapController.mm in Sources */,
+				2F466D0F228ACAB9006D27EC /* MapOptionsPopupContent.swift in Sources */,
+				AD3FFFB11F71237F005642F9 /* GeocodingView.m in Sources */,
+				4DC850081A0E718100C5124F /* LauncherListController.mm in Sources */,
+				ADCB208B1F4B2A5C00E6F8E0 /* BaseReverseGeocodingController.mm in Sources */,
+				AD59914D1F4B3BB200CDF426 /* OfflineReverseGeocodingController.m in Sources */,
+				AD4F920C1F6BF48200139F79 /* Device.swift in Sources */,
+				ADCF53C11DC1FFC3004AD5C3 /* MyVectorElementEventListener.mm in Sources */,
+				AD46EB441F6FF07A004B662F /* PackageDownloadListener.m in Sources */,
+				ADC02EB01F752BE100849DBD /* BaseMapsView.m in Sources */,
+				AD4F91FD1F6BEA0400139F79 /* AlertBaseView.swift in Sources */,
+				4D13E2801A6EB72600FA74DC /* CustomPopupController.mm in Sources */,
+				ADB148961DC0A6FB009A899B /* VectorElementDeselectEventListener.mm in Sources */,
+				AD589CE41DC0BDD3004E68B2 /* CaptureController.mm in Sources */,
+				AD2AD56F1F4B023D00F3C479 /* Package.mm in Sources */,
+				2AD24F7518FEDAA6000969F4 /* AppDelegate.m in Sources */,
+				AD3FFFB81F714D89005642F9 /* RouteClickListener.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA114131DA399FF00481261 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA1141A1DA399FF00481261 /* AdvancedMap_Objective_C_UITests.m in Sources */,
+				ADA114281DA3A37600481261 /* LauncherListController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADA1141D1DA399FF00481261 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A319B3E187C4F8F0004A3CB /* AdvancedMap.Objective-C */;
+			targetProxy = ADA1141C1DA399FF00481261 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2AD24F7E18FEDB5C000969F4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AD24F7F18FEDB5C000969F4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A319B72187C4F8F0004A3CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "c3d8d505-ccd8-4f29-a42c-0c8ef2e54b7e";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		2A319B73187C4F8F0004A3CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: CARTODB ESTONIA OU";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PROVISIONING_PROFILE = "c3d8d505-ccd8-4f29-a42c-0c8ef2e54b7e";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		2A319B75187C4F8F0004A3CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 434F72035F7288C218D7B435 /* Pods-AdvancedMap.Objective-C.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YH4NUPFH74;
+				ENABLE_BITCODE = NO;
+				ENABLE_MODULE_VERIFIER = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../dist/ios",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "AdvancedMap/AdvancedMap.Objective-C-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu99 gnu++11";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "carto.AdvancedMap-Objective-C";
+				PRODUCT_NAME = "AdvancedMap.Objective-C";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AdvancedMap/AdvancedMap.Objective-C-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2A319B76187C4F8F0004A3CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65284DDA3D95F82D5DF6B11D /* Pods-AdvancedMap.Objective-C.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YH4NUPFH74;
+				ENABLE_BITCODE = NO;
+				ENABLE_MODULE_VERIFIER = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../dist/ios",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "AdvancedMap/AdvancedMap.Objective-C-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu99 gnu++11";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "carto.AdvancedMap-Objective-C";
+				PRODUCT_NAME = "AdvancedMap.Objective-C";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AdvancedMap/AdvancedMap.Objective-C-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		ADA1141E1DA399FF00481261 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41488110D30CDAF74B940709 /* Pods-AdvancedMap.Objective-C.UITests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "AdvancedMap.Objective-C.UITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "carto.AdvancedMap-Objective-C-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "AdvancedMap.Objective-C";
+			};
+			name = Debug;
+		};
+		ADA1141F1DA399FF00481261 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD02FEE866BAAE942D33FB01 /* Pods-AdvancedMap.Objective-C.UITests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "AdvancedMap.Objective-C.UITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "carto.AdvancedMap-Objective-C-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "AdvancedMap.Objective-C";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A319B3A187C4F8F0004A3CB /* Build configuration list for PBXProject "AdvancedMap.Objective-C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A319B72187C4F8F0004A3CB /* Debug */,
+				2A319B73187C4F8F0004A3CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A319B74187C4F8F0004A3CB /* Build configuration list for PBXNativeTarget "AdvancedMap.Objective-C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A319B75187C4F8F0004A3CB /* Debug */,
+				2A319B76187C4F8F0004A3CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADA114201DA399FF00481261 /* Build configuration list for PBXNativeTarget "AdvancedMap.Objective-C.UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA1141E1DA399FF00481261 /* Debug */,
+				ADA1141F1DA399FF00481261 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A319B37187C4F8F0004A3CB /* Project object */;
+}
